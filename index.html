@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #fcebb6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border: 4px solid #078930;
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            color: #d22730;
+            margin-bottom: 10px;
+        }
+        p {
+            text-align: center;
+            font-style: italic;
+            color: #006b3c;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            font-weight: 600;
+            color: #078930;
+        }
+        input, textarea, button {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #999;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ffc107;
+            color: #333;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        button:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contactez-nous</h1>
+        <form action="mailto:demekeeneyew13@gmail.com" method="POST" enctype="text/plain">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Objet :</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>
